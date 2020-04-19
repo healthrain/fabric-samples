@@ -28,8 +28,8 @@ chmod +x ./scripts/bootstrap.sh
 # Download binaries and docker images
 ./scripts/bootstrap.sh [version] [ca version] [thirdparty_version]
 ```
-
-# To interact with test network, Start here
+# Start here
+## To interact with test network
 > Follow instructions given here : https://hyperledger-fabric.readthedocs.io/en/release-2.0/test_network.html
 
 ## License <a name="license"></a>
