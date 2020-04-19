@@ -41,7 +41,7 @@ cd fabric-samples/test-network
 This command creates a Fabric network that consists of two peer nodes, one ordering node.
 
 ## Components of the test network
-1. Run the following command to list all of Docker containers that are running on your machine: `docker ps -a`
+> Run the following command to list all of Docker containers that are running on your machine: `docker ps -a`
 
 Each node and user that interacts with a Fabric network needs to belong to an organization that is a network member. The group of organizations that are members of a Fabric network are often referred to as the consortium. The test network has two consortium members, Org1 and Org2. The network also includes one orderer organization that maintains the ordering service of the network.
 
@@ -56,7 +56,7 @@ An ordering service allows peers to focus on validating transactions and committ
 The sample network uses a single node Raft ordering service that is operated by the ordering organization. You can see the ordering node running on your machine as orderer.example.com. While the test network only uses a single node ordering service, a real network would have multiple ordering nodes, operated by one or multiple orderer organizations. The different ordering nodes would use the Raft consensus algorithm to come to agreement on the order of transactions across the network.
 
 ## Creating a channel
-Run the following command to create a channel with the default name of mychannel: `./network.sh createChannel`
+> Run the following command to create a channel with the default name of mychannel: `./network.sh createChannel`
 
 Now that we have peer and orderer nodes running on our machine, we can use the script to create a Fabric channel for transactions between Org1 and Org2. Channels are a private layer of communication between specific network members. Channels can be used only by organizations that are invited to the channel, and are invisible to other members of the network. Each channel has a separate blockchain ledger. Organizations that have been invited “join” their peers to the channel to store the channel ledger and validate the transactions on the channel.
 
